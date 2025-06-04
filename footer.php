@@ -99,7 +99,6 @@
         }
     });
 
-    // Cambia TU_API_KEY_AQUI por tu clave real de RapidAPI
     document.getElementById('grupoMuscular').addEventListener('change', async function() {
         const muscle = this.value;
         if (!muscle) return;
@@ -127,6 +126,8 @@
             console.error(error);
             img.style.opacity = 1;
         }
+        
+        mostrarEjercicios(muscle);
     });
 </script>
 <?php wp_footer(); ?>
