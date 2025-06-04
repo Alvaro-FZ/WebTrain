@@ -67,6 +67,10 @@ body::after {
 .imagen-cuerpo {
     max-width: 100%;
     height: auto;
+    /* Animación al cargar */
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
 }
 
 
@@ -245,4 +249,37 @@ body::-webkit-scrollbar-thumb {
     background-color: #d6336c; /* Color del scroll */
     border-radius: 10px; /* Bordes redondeados */
     border: 2px solid #f2f2f2; /* Espaciado entre el scroll y el track */
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-down {
+    animation: fadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.fade-down-delayed {
+    animation: fadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+}
+
+.left-panel h1 {
+    /* Animación para los títulos */
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+}
+
+.left-panel select {
+    /* Animación para los selects */
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fadeDown 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
