@@ -178,7 +178,7 @@ footer {
 }
 
 .theme-switch input:checked + label {
-    background: #4caf50;
+    background: #4cafad;
 }
 
 .theme-switch input:checked + label::after {
@@ -208,13 +208,13 @@ body.dark-mode select {
 }
 
 body.dark-mode h1 {
-    color: #4caf50;
+    color: #4cafad;
 }
 
 /* Estilos para el scroll en el tema oscuro */
 body.dark-mode {
     scrollbar-width: thin !important; /* Ancho del scroll */
-    scrollbar-color: #4caf50 #121212 !important; /* Color del scroll y del fondo en tema oscuro */
+    scrollbar-color: #4cafad #121212 !important; /* Color del scroll y del fondo en tema oscuro */
 }
 
 /* Para navegadores basados en Webkit (Chrome, Edge, Safari) en tema oscuro */
@@ -227,7 +227,7 @@ body.dark-mode::-webkit-scrollbar-track {
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
-    background-color: #4caf50 !important; /* Color del scroll */
+    background-color: #4cafad !important; /* Color del scroll */
     border-radius: 10px !important; /* Bordes redondeados */
     border: 2px solid #121212 !important; /* Espaciado entre el scroll y el track */
 }
